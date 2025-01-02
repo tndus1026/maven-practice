@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet({"/", "/index", "/server/status"})
+@WebServlet("/server/status")
 public class ServerStatusServlet extends HttpServlet {
 	private final DBStatusService service = new DBStatusServiceImpl();
 	
